@@ -72,4 +72,4 @@ CMD commands if Files are on Desktop:
 cd Desktop
 python3 sort.py
 
-July 30, 2025
+October 25, 2025
