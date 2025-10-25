@@ -1,67 +1,66 @@
-Was ihr tun sollt:
+What you should do:
 
-Alle Bilder, Videos etc., die ihr habt, einfach in den Ordner "Unsorted Dump" kopieren. Den Rest sortiert das sort.py Programm, wenn ich es starte.
-Theoretisch wars das. :)
-
-
-
-Falls ihr selber Ordnung schaffen wollt:
-
-
-Ordner für Bilder optimieren (Windows)[sonst ist es vermutlich etwas langsam bei euch]:
-
-Um eure Fotos im Ordner möglichst gut und schnell als Vorschaubilder (Thumbnails) sehen zu können, bietet Windows eine Funktion, die den Ordner „für Bilder optimiert“. So aktiviert ihr das:
-⦁	Öffnet den Ordner (z.B. den „Photos“-Ordner auf eurem NAS).
-⦁	Klickt mit der rechten Maustaste in einen freien Bereich und wählt „Eigenschaften“.
-⦁	Wechselt zum Reiter „Anpassen“.
-⦁	Unter „Diesen Ordner optimieren für:“ wählt ihr aus dem Dropdown-Menü „Bilder“ aus.
-⦁	Klickt auf „Übernehmen“ und dann „OK“.
-
-Dadurch zeigt Windows in diesem Ordner automatisch größere Vorschaubilder und kann die Bilddateien besser und schneller darstellen. Keine Sorge – diese Einstellung wirkt nur auf euren Computer und ändert nichts an den Dateien oder dem NAS. Andere Familienmitglieder sehen weiterhin ihre eigene Ansicht.
+Simply copy all the pictures, videos, etc., that you have into the "Unsorted Dump" folder. The rest will be sorted by the sort.py program when I run it.
+Theoretically, that's it. :)
 
 
 
-Wichtig!!!
-
-Bitte keine der bestehenden Ordner YYYY oder YYYY.MM umbenennen, da das Programm diese zur Sortierung nutzt!
+If you want to organize things yourself:
 
 
+Optimizing folders for pictures (Windows) [otherwise it will probably be a bit slow for you]:
 
-Besondere Ordner:
+To be able to view your photos in the folder as thumbnails as efficiently and quickly as possible, Windows offers a function that "optimizes" the folder "for pictures". Here's how to activate it:
+⦁ Open the folder (e.g., the "Photos" folder on your NAS).
+⦁ Right-click in an empty area and select "Properties".
+⦁ Switch to the "Customize" tab.
+⦁ Under "Optimize this folder for:", select "Pictures" from the dropdown menu.
+⦁ Click "Apply" and then "OK".
 
-Wenn ihr spezielle Ordner wollt, z.B. für Hochzeiten, dann erstellt diese selbst mit folgendem Schema:
-
-YYYY.MM.TT - "Name"
-
-und diesen halt richtig einordnen...
-
-
-
-Mehr Infos uber das Programm (sort.py)
-
-Wie funktioniert das Programm?
-⦁	Das Programm durchsucht alle Dateien im Ordner "Unsorted Dump" auf dem NAS.
-⦁	 	Dateien mit Foto-Dateiendungen (z.B. .jpg, .png, .heic usw.) werden in den Photos-Ordner verschoben.
-⦁	 	Dateien mit Video-Dateiendungen (z.B. .mp4, .mov, .mkv usw.) werden in den Videos-Ordner verschoben.
-⦁	 	Alle anderen Dateien (z.B. Dokumente) bleiben im Unsorted Dump-Ordner und werden nicht verschoben.
-⦁	Innerhalb der Ordner Photos und Videos werden die Dateien anhand ihres Änderungsdatums in Unterordner nach Jahr (YYYY) und Monat (YYYY.MM) sortiert.
-⦁	Ordner werden nur dann erstellt, wenn dort mindestens eine Datei landet, so entstehen keine leeren Ordner.
-⦁	Existiert im Zielordner bereits eine Datei mit dem gleichen Namen, werden deren Inhalte verglichen:
-⦁	 	Sind die Dateien identisch, wird die vorhandene Datei durch die neue überschrieben.
-⦁	 	Sind die Dateien unterschiedlich, wird die neue Datei mit einem +1, +2 usw. am Dateinamen versehen, um Namenskonflikte zu vermeiden.
+This will automatically display larger thumbnails in this folder and allow Windows to display the image files better and faster. Don't worry – this setting only affects your computer and doesn't change anything about the files or the NAS. Other family members will still see their own view.
 
 
 
-Unterstützte Dateitypen
+Important!!!
 
-Fotos:
+Please do not rename any of the existing YYYY or YYYY.MM folders, as the program uses them for sorting!
+
+
+
+Special folders:
+
+If you want special folders, e.g., for weddings, then create them yourself using the following scheme:
+
+YYYY.MM.DD - "Name"
+
+and then place them in the correct location...
+
+
+
+More information about the program (sort.py)
+
+How does the program work?
+⦁ The program searches all files in the "Unsorted Dump" folder on the NAS.
+⦁ Files with photo file extensions (e.g., .jpg, .png, .heic, etc.) are moved to the Photos folder.
+⦁ Files with video file extensions (e.g., .mp4, .mov, .mkv, etc.) are moved to the Videos folder. • All other files (e.g., documents) remain in the Unsorted Dump folder and are not moved.
+• Within the Photos and Videos folders, files are sorted into subfolders by year (YYYY) and month (YYYY.MM) based on their modification date.
+• Folders are only created if at least one file is placed in them, thus preventing the creation of empty folders.
+• If a file with the same name already exists in the destination folder, its contents are compared:
+• If the files are identical, the existing file is overwritten by the new one.
+• If the files are different, the new file is given a +1, +2, etc. suffix to its filename to avoid naming conflicts.
+
+
+
+Supported file types
+
+Photos:
 .jpg, .jpeg, .png, .gif, .bmp, .tiff, .heic, .raw, .arw, .svg, .webp, .dp, .pdn
 
 Videos:
 .mp4, .mov, .avi, .mkv, .flv, .wmv, .mpeg, .mpg, .3gp, .m4v, .webm, .vob, .mts
 
 
-Dateien wie Dokumente (.pdf, .docx, etc.) oder andere Dateitypen bleiben im Ordner Unsorted Dump und werden nicht verschoben.
+Files such as documents (.pdf, .docx, etc.) or other file types remain in the Unsorted Dump folder and are not moved.
 
 
 
@@ -69,8 +68,8 @@ Dateien wie Dokumente (.pdf, .docx, etc.) oder andere Dateitypen bleiben im Ordn
 
 
 __________________________________________________
-CMD:
+CMD commands if Files are on Desktop:
 cd Desktop
 python3 sort.py
 
-30.07.2025
+July 30, 2025
